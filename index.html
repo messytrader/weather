@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Basic</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <body>
+     
+      <div class="container">
+  <div class="search">
+          <input
+            type="text"
+            placeholder="Search here..."
+            class="search-txt"
+            style="text-transform: capitalize"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+          <button class="btn">Search</button>
+        </div>
+        <hr class="line" />
+        <div class="city">
+          Amsterdam
+          <svg
+            class=""
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-geo"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"
+            />
+          </svg>
+        </div>
+        <div class="cities">
+          <p class="sehar">Delhi || Patna || Bangalore || Jaipur</p>
+        </div>
+        <div class="dateandtime">
+          <p>12.08.16 Monday</p>
+          <p></p>
+          <p>|</p>
+          <p>12.06.30 Am</p>
+        </div>
+
+        <div class="weather">CLOUDY</div>
+        <div class="weather-img">
+          <img
+            src="https://cdn.icon-icons.com/icons2/520/PNG/512/Weather-clouds-rain_icon-icons.com_51825.png"
+            alt=""
+            class="images"
+          />
+        </div>
+        <div class="temperature"><p class="tempo">10.5°C </p></div>
+        <div class="conditions">
+          <div class="humidity">
+            Humidity
+            <p class="humid">60%</p>
+            <span class="dots">...</span>
+          </div>
+          <div class="precipitation">
+            Pressure
+            <p class="press">1000</p>
+            <span class="dots">...</span>
+          </div>
+
+          <div class="wind">
+            Wind Speed
+            <p class="windy">6.2 km/h</p>
+            <span class="dots">...</span>
+          </div>
+        </div>
+        <p class="last">Check It out Before Leaving....</p>
+      </div>
+  
+      <script src="./index.js"></script>
+    </body>
+
+     
+  </head>
+</html>
+<!-- 
+  dot-collision
+
+  dots::before, .dot-collision::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dots::before {
+  left: -10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dot-collision-before 2s infinite ease-in;
+}
+.dots::after {
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dot-collision-after 2s infinite ease-in;
+  animation-delay: 1s;
+}
+
+@keyframes dots-before {
+  0%, 50%, 75%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-15px);
+  }
+}
+@keyframes dots-after {
+  0%, 50%, 75%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(15px);
+  }
+}
+
+
+
+
+
+ -->

@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+   
+}
+body{
+    /* background: rgb(139, 209, 255);  */
+    background-image: url("https://paulryan.com.au/wp-content/uploads/2015/01/high-resolution-wallpapers-25.jpg");
+     height: 100vh;
+    width: 100%; 
+    background-repeat: no-repeat;
+background-size: cover;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+  
+.container{
+    background: transparent;
+    background-color:#ffffff;
+    margin: 40px;
+    margin-right: 60%;
+    height: 93vh;
+    opacity: 0.7;
+    border-radius: 7px;
+}
+.search{
+    background-color: none;
+    margin: 40px;
+    width: 100%;
+    
+}
+.search-txt{
+    background:none;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 40%;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: bold;
+
+}
+search-txt::placeholder{
+    color: #000000;
+    font-weight: 700;
+}
+.search-txt:focus::placeholder{
+    color: #000000;
+    padding: 10px;
+    font-weight: bold;
+}
+.search-txt:focus{
+    outline: none;
+}
+svg{
+ position: relative;
+ margin-right: 10px;
+}
+/* .btn{
+    width: 100px;
+    height: 30px;
+    background: #bcffaf;
+    border-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.btn:hover{
+    background: #2bff00;
+}
+.btn:focus{
+    outline: none;
+    transition: ease-in-out;
+} */
+.line{
+    margin-top: 0px;
+}
+.city{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+.cities{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 10px 0px;
+  
+}
+.dateandtime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+.dateandtime p{
+    padding: 3px;
+}
+.weather{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.weather-img{
+
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 15px;
+
+}
+.images{
+    
+    width: 110px; 
+}
+.temperature{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 25px;
+    font-size: 40px;
+}
+.conditions{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 30px;
+    padding: 7px;text-align: center;
+
+}
+.humidity,.precipitation,.wind{
+  
+    background: rgba(3, 255, 87, 0.403);
+    border-radius: 5px;
+    height: 12vh;
+    padding: 6px;
+    width: 180px;
+   
+}
+.humidity,.precipitation,.wind p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.dots{
+    /* font-size: 1.5rem; */
+    font-size: 20px;
+    font-weight: 600;
+}
+.last{
+    margin-top: 10px;
+text-align: center;
+font-weight: bolder;
+color: black;
+font-size: 0.8rem;}
+
+
+
+
+
+.btn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.btn:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.btn:active {
+    color: #000
+}
+
+.btn:active:after {
+    background: transparent;
+}
+
+.btn:hover:before {
+    opacity: 1;
+}
+
+.btn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+} 
+
+
+ /* .btn {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  /* background: transparent; 
+  border: 1px solid #000000;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.border  svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+} 
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}  */
+
+
+  
+ @keyframes glowing {
+   
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+    
+    
+    
+}  
+
+@media only screen and (max-width: 600px){
+    .container{
+        width: 82%;
+    }
+}
